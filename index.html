@@ -31,33 +31,3 @@
             background-color: #007bff;
             color: #fff;
             border: none;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Fun Fact Generator</h1>
-        <p id="fact">Click the button to see a fun fact about Earth!</p>
-        <button id="generateFact">Generate Fun Fact</button>
-    </div>
-    <script>
-        const funFacts = [
-            "Earth is the only planet not named after a god.",
-            "70% of the Earth's surface is covered in water.",
-            "Earth's atmosphere is composed of 78% nitrogen and 21% oxygen.",
-            "The Earth's rotation is gradually slowing.",
-            "Earth is the densest planet in the Solar System."
-        ];
-
-        document.getElementById('generateFact').addEventListener('click', () => {
-            const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
-            document.getElementById('fact').textContent = randomFact;
-        });
-    </script>
-</body>
-</html>
